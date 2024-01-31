@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>iphone14 dynamic island</title>
+    <script src="src/pure-swipe.js"></script>
+</head>
+<body>
+    <div id="phone-frame" class="phone_frame">
+        <div id="screen" class="screen ">
+            <!-- lock screen section starts from here -->
+            <div id="lock-screen" class="lock-screen" style="display: block;">
+                <div id="dynamic-island"class="dynamic-island">
+                    <div id="lock-screen-icon" class="lock-screen-icon" style="display: block; ">
+                        <i class="material-icons" style="font-size: 15px;">lock</i>
+                    </div>
+                    <div id="music-icon" class="music-icon" style="display: none;">
+                        <div class="music-container">
+                            <div class="music-poster-container">
+                                <img id="music-poster" class = "music-poster" src="music-poster.jpg" alt="">
+                            </div>
+                            <div id="about-music" class="about_music">
+                                <div>
+                                    <p class="name"><b>Willow</b></p>
+                                </div>
+                                <div class="singer">
+                                    <span>tailor swift</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="song-status" class="song-status">
+                            <div class="run-time">
+                                <span>1:30</span>
+                            </div>
+                            <div class="bar">
+                                <div class="progress_bar">
+                                </div>
+                            </div>
+                            <div class="total-time">
+                                <span>3:30</span>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+                <div class="time-and-date-container">
+                    <div class="date">
+                        <span id="date"></span>
+                    </div>
+                    <div class="time">
+                        <span id="time"></span>
+                    </div>
+                </div>
+                <div class="notification-section">
+
+                </div>
+                <div id="bottom-hr" class="bottom-hr" style="margin-top:98px; transition: all 0.5s;">
+                    <hr color="white" width="35%" style="height: 1.5px; border-radius:5px;">
+                </div>
+            </div>
+            <!-- lock screen section ends here -->
+            <div class="password-screen" id="password-screen">
+                <div class="lock-icon">
+                    <i class="material-icons">lock</i>
+                </div>
+                <span style="font-size: 14px; margin: 8px;">Enter Passcode</span>
+                <div class="dots-container">
+                    <div id="dot1" class="dots dot1"></div>
+                    <div id="dot2" class="dots dot2"></div>
+                    <div id="dot3" class="dots dot3"></div>
+                    <div id="dot4" class="dots dot4"></div>
+                    <div id="dot5" class="dots dot4"></div>
+                </div>
+                <div class="password-container">
+                    <div class="rows row1">
+                        <div class="buttons" onclick="button_pressed(1)">
+                            <span>1</span>
+                        </div>
+                        <div class="buttons" onclick="button_pressed(2)">
+                            <span>2</span>
+                        </div>
+                        <div class="buttons" onclick="button_pressed(3)">
+                            <span>3</span>
+                        </div>
+                    </div>
+                    <div class="rows row2">
+                        <div class="buttons" onclick="button_pressed(4)">
+                            <span>4</span>
+                        </div>
+                        <div class="buttons" onclick="button_pressed(5)">
+                            <span>5</span>
+                        </div>
+                        <div class="buttons" onclick="button_pressed(6)">
+                            <span>6</span>
+                        </div>
+                    </div>
+                    <div class="rows row3">
+                        <div class="buttons" onclick="button_pressed(7)">
+                            <span>7</span>
+                        </div>
+                        <div class="buttons" onclick="button_pressed(8)">
+                            <span>8</span>
+                        </div>
+                        <div class="buttons" onclick="button_pressed(9)">
+                            <span>9</span>
+                        </div>
+                    </div>
+                    <div class="rows row4">
+                        <div class="buttons" onclick="button_pressed(0)">
+                            <span>0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="javaScript.js"></script>
+</html>

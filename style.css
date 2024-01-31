@@ -1,0 +1,239 @@
+/* css for the body */
+body{
+    background-color: rgb(53, 53, 53);
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* variables */
+
+:root{
+    --screensize: 498px;
+    --screenwidth:248px;
+}
+
+/* css for the phone frame  */
+body{
+    margin: 0;
+}
+.phone_frame{
+    border: solid black;
+    width: 250px;
+    height: 500px;
+    margin: auto;
+    border-radius: 30px;
+    border-width: 6px;
+    background-image: url(wallpaper.jpg);
+    background-blend-mode: darken;
+    background-color: rgba(0, 0, 0, 0.406);
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor:grab;
+}
+
+
+/* css for the screens */
+.lock-screen{
+    display: block;
+    animation: fade-in 1.2s;
+}
+/* css for dynamic island  */
+.dynamic-island{
+    border: solid black;
+    width: 30%;
+    margin: auto;
+    margin-top: 10px;
+    background-color: black;
+    height: 15px;
+    border-radius: 10px;
+    padding: 2px 5px;
+    transition: all 0.5s;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    align-content: center;
+}
+.dynamic-island-hover{
+    border: solid black;
+    width: 70%;
+    margin: auto;
+    margin-top: 15px;
+    background-color: black;
+    height: 35px;
+    border-radius: 15px;
+    padding: 2px 5px;
+}
+.dynamic-island-click{
+    border: solid black;
+    width: 70%;
+    margin: auto;
+    margin-top: 15px;
+    background-color: black;
+    height: 70px;
+    border-radius: 15px;
+    padding: 2px 5px;
+}
+
+/* css for the image of the song */
+.music-icon{
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+}
+.music-poster {
+    width: 14px;
+    height: 15px;
+    border-radius: 100%;
+    transition: all 0.5s;
+    margin-top: -6px;
+    display: block;
+    margin: auto;
+}
+.music-poster-hover-animation{
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    margin-top: 0px;
+}
+.music-container{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    column-gap: 10px;
+}
+
+/* css for the about the singer and name and status of the music */
+.about_music{
+    vertical-align: middle;
+    display: none;
+    animation: fade-in 1s;
+    margin: auto 0px;
+}
+.name{
+    display: block;
+    font-size: 10px;
+    margin: auto;
+}
+.singer span{
+    display: block;
+    font-size: 10px;
+    margin: auto;
+}
+.song-status{
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+    display: none;
+    animation: fade-in 1.7s;
+}
+.run-time, .total-time{
+    font-size: 10px;
+}
+.bar{
+    background-color: grey;
+    width: 80%;
+    height: 4px;
+    border-radius: 5px;
+    vertical-align: middle;
+}
+.progress_bar{
+    background-color: white;
+    width: 30%;
+    height: 4px;
+    border-radius: 5px;
+}
+
+/* this is for the date section */
+.time-and-date-container{
+    margin-top: 20px;
+}
+.time{
+    display: block;
+    margin-top: -10px;
+    text-align: center;
+    font-size: 60px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.712);
+}
+.date{
+    color: rgba(255, 255, 255, 0.712);
+    display: block;
+    text-align: center;
+    margin-bottom: -10px;
+}
+
+/* this is for the notification section on the lock screen */
+.notification-section{
+    display: block;
+    width: 240px;
+    height: 250px;
+}
+/* notification section ends here */
+
+/* this section is for the pasword screen */
+.password-screen{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    animation: fade-in 1s;
+}
+.lock-icon{
+    padding: 50px;
+}
+.dots-container{
+    display: flex;
+    flex-direction: row;
+    column-gap: 15px;
+    justify-content: center;
+}
+.dots{
+    width: 7px;
+    height: 7px;
+    border-radius: 10px;
+    border: solid white;
+    border-width: 1px;
+}
+.password-container{
+    display: flex;
+    flex-direction: column;
+    row-gap: 17px;
+    padding-top: 70px;
+}
+.rows{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 24px;
+}
+.buttons{
+    background-color: rgba(211, 211, 211, 0.381);
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 25px;
+}
+
+/* this is for the modes */
+.modes{
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+
+/* this animation is for the fade in of elements */
+@keyframes fade-in {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+
+
+/* //this section is for the phones */
+
